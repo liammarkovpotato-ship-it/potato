@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Potato — דברו איתנו</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">🥔 potato</a>
+    </div>
+  </nav>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <div class="contact-text">
+          <p class="eyebrow">בואו נתחיל</p>
+          <h2>מוכן לשתול משהו גדול?</h2>
+          <p>שלחו לנו הודעה ונחזור אליכם תוך יום עסקים. ללא שיחות מכירה מיותרות.</p>
+          <div class="contact-details">
+            <a href="mailto:liammarkov.potato@gmail.com">📧 liammarkov.potato@gmail.com</a>
+            <a href="tel:+972503995882">📞 050-399-5882</a>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="שם מלא" required />
+            <input type="email" name="email" placeholder="אימייל" required />
+          </div>
+          <textarea name="message" placeholder="ספר לנו על הפרויקט..." rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary full-width">
+            <span class="btn-text">שלח הודעה 🥔</span>
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✅ תודה! נחזור אליך בקרוב.
+          </div>
+          <div class="form-error" id="formError">
+            ❌ משהו השתבש. נסה שוב או שלח ישירות למייל.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© 2026 Potato Technologies Ltd. כל הזכויות שמורות.</span>
+        <span>Made with 🥔 in Tel Aviv</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
